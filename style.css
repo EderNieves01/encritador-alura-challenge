@@ -1,3 +1,69 @@
-.headerAlura{
-margin: 20px 0 15px 10px;
+.headerAlura {
+    display: flex;
+    margin: 20px 0 15px 10px;
+}
+main{
+    display: flex;
+    height: 33rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.sectionLeft{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    
+}
+textarea {
+    outline: none;
+    border: none;
+    display: flex;
+    font-size: 20px;
+    line-height: 2rem;
+    padding: .8rem;
+    resize: none;
+    width: 74%;
+    border-style: none;
+}
+
+
+.advertencia {
+    display: flex;
+}
+
+#imgAdvertencia {
+    float: left;
+    width: 17px;
+    height: 17px;
+    margin-right: 0.5rem;
+}
+#textAdvertencia {
+    font-weight: bold;
+}
+
+.btns {
+    display: flex;
+    width: 328px;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+#btnEncriptar {
+    border-style: none;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 24px;
+    background: var(--Dark-blue-dark-blue-300, #0A3871);
+    cursor: pointer;
+}
+#btnDesencriptar {
+    border-style: none;
+    padding: 10px 30px;
+    border-radius: 24px;
+    border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
+    background: #D8DFE8;
+    cursor: pointer;
 }

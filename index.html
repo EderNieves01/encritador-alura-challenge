@@ -10,22 +10,34 @@
     </head>
     <body>
 <header class="headerAlura">
-    <img src="img/Logoalura.png" alt="logo-alura" width="120px"
+    <img id="imgLogo" src="img/Logoalura.png" alt="logo-alura" width="120px"
     height="48px">
 </header>
+
 <main>
+
     <section class="sectionLeft">
-        <textarea name="textArea" id="" cols="30" rows="10">Ingrese el texto aqui</textarea>
-    <img src="img/advertencia.png" width="20px" height="20px" alt="advertencia">
-        <p>solo se aceptan letras minusculas y sin caracteres especiales</p>
-        <button>Encriptar</button>
-    <button>Desencriptar</button>
+        <textarea name="textArea" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+     <div class="advertencia">
+           <img id="imgAdvertencia" src="img/advertencia.png" width="20px" height="20px" alt="advertencia">
+       
+    <aside id="textAdvertencia">solo se aceptan letras minusculas y sin caracteres especiales</aside>
+         
+     </div>
+     <div class="btns">
+       <button  id="btnEncriptar">Encriptar</button>
+    <button  id="btnDesencriptar">Desencriptar</button>
+  
+     </div>
+    
     </section>
+
     <section class="sectionRigth">
         <h1>aqui se vera el texto encriptado</h1>
         <img src="img/github.png" alt="" width="20px" height="20px">
         <img src="img/instagram.png" alt="" width="20px" height="20px">
     </section>
+
 </main>
 <footer>
     <h5>Eder Nieves Creo esto</h5>
