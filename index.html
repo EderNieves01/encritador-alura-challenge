@@ -9,7 +9,25 @@
         </style>
     </head>
     <body>
-<header class="headerAlura">
+        <!-- <p>Usted ha obtenido la nota de 8 sobre 10: <meter value="3" min="0" low="4"
+            max="10" hight="8" optimum="9"></p>
+            <details>
+                <summary>Haga clic para consultar todos los detalles de su pedido.</summary>
+                <p>Estos son los detalles de su pedido...</p>
+                <p>Y bla bla bla...</p>
+               </details>
+               <h2>Los nuevos elementos de HTML5</h2>
+<p>Progresión de la tarea: <progress id="p" value="70" max="100">40% 
+    <a id="inicio" href="#">
+        <h2 id="titulo">Inicio</h2>
+        <img id="triángulo" src="img/instagram.png" alt="" width="20px" height="20px"/>
+       </a> -->
+
+
+
+
+
+    <header class="headerAlura">
     <img id="imgLogo" src="img/Logoalura.png" alt="logo-alura" width="120px"
     height="48px">
 </header>
@@ -17,7 +35,7 @@
 <main>
 
     <section class="sectionLeft">
-        <textarea name="textArea" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        <textarea name="textArea" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus></textarea>
      <div class="advertencia">
            <img id="imgAdvertencia" src="img/advertencia.png" width="20px" height="20px" alt="advertencia">
        
@@ -25,22 +43,44 @@
          
      </div>
      <div class="btns">
+         
        <button  id="btnEncriptar">Encriptar</button>
-    <button  id="btnDesencriptar">Desencriptar</button>
+    <button id="btnDesencriptar">Desencriptar</button>
   
      </div>
-    
+     
     </section>
+    
+    
 
     <section class="sectionRigth">
-        <h1>aqui se vera el texto encriptado</h1>
-        <img src="img/github.png" alt="" width="20px" height="20px">
-        <img src="img/instagram.png" alt="" width="20px" height="20px">
-    </section>
+        <div class="img-detective">
+            <img id="ocultar-muneco" src="img/detective.png" width="140" height="140" alt="Imagen detective sorprendido">
+        </div>
+        <div class="contenedor-h3">
+            <h3 class="ajustes-h3">Ningún mensaje fue encontrado</h3>
+        </div>
+
+        <div class="contenedor-parrafo">
+            <p class="ajustes-parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+
+        <div class="contenedor-resultado">
+            <h3 class="titulo-encriptado" id="ocultar-titulo-encriptado">Texto Encriptado</h3>
+            <textarea class="texto-resultado" id="textoResultado" cols="50" rows="10"></textarea>
+        </div>
+
+        <div class="contenedor-copiar">
+            <button class="btnCopiar" id="copiar">Copiar</button>
+        </div>
+        </section>
 
 </main>
 <footer>
     <h5>Eder Nieves Creo esto</h5>
+     <img src="img/github.png" alt="" width="20px" height="20px">
+        <img src="img/instagram.png" alt="" width="20px" height="20px">
+   
 </footer>
     </body>
 </html>
