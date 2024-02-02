@@ -23,9 +23,11 @@ main{
     margin: 3rem;
 }
 .sectionRigth{
-    display: block;
-    border-radius: 10px;
-    width: 45%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-right: 2rem;
+    overflow: hidden;
+    width: 44%;
     box-shadow: 0px 0px 10px rgba(10,20,30,.8); 
     cursor: zoom-in;
 }
@@ -33,7 +35,6 @@ main{
     display: none;
 }
 .contenedor-resultado{
-    display: none;
     width: auto;
     height: 16rem;
     font-size: 17px;
@@ -42,7 +43,7 @@ main{
     text-align: center;
     font-family: sans-serif;
 }
-textarea {
+.text_area1 {
     outline: none;
     border: none;
     display: flex;
@@ -118,6 +119,13 @@ textarea {
     background: #D8DFE8;
     cursor: pointer;
     border-style: none;
+}
+
+.no-resultado{
+    display: none;
+}
+.contenedor-resultado{
+    display: block;
 }
 .contenedor-copiar{
     display: none;
