@@ -96,7 +96,7 @@ main{
     cursor: zoom-in;
 }
 .no-resultado{
-
+display: none;
 }
 .img-detective{
     margin-top: 70px;
@@ -125,22 +125,27 @@ main{
 
 .div-resultado{
     width: auto;
-    height: 16rem;
+    height: 100%;
     font-size: 17px;
     box-sizing: border-box;
     text-align: center;
     font-family: sans-serif;
+    margin-left: 1rem;
+}
+
+.text-encriptado{
+    width: 90%;
+    height: 80%;
 }
 
 .div-copiar{
     width: 100%;
+    margin-top: 2rem;
 }
 .btn-copiar{
     margin: auto;
-    display: flex;
-    text-align: center;
     font-weight: bold;
-    padding: 10px 30px;
+   padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 24px;
     border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
     background: #D8DFE8;
