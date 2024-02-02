@@ -97,7 +97,7 @@ main{
     cursor: zoom-in;
 }
 .no-resultado{
-display: none;
+display: block;
 }
 .img-detective{
     margin-top: 70px;
@@ -132,6 +132,7 @@ display: none;
     text-align: center;
     font-family: sans-serif;
     margin-left: 1rem;
+    display: none;
 }
 
 .div-text-encriptado{
