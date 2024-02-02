@@ -107,7 +107,7 @@ main{
     margin: auto;
     width: 40%;
 }
-.btnCopiar{
+.btn-copiar{
     margin: auto;
     width: 40%;
     display: flex;
@@ -122,13 +122,17 @@ main{
 }
 
 .no-resultado{
-    display: none;
+    display: block;
 }
 .contenedor-resultado{
     display: block;
+    
 }
-.contenedor-copiar{
-    display: none;
+.div-copiar{
+    width: 100%;
+}
+.btn-copiar{
+    
 }
 .contenedor-parrafo{
     font-family: sans-serif;
