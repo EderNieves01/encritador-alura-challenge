@@ -42,12 +42,13 @@ function desencriptar(){
     divNoResultado.style.display = "none";
     divResultado.style.display = "block";
     let text = textArea.value;
-    text.replace(/e/g, 'enter')
-    .replace(/i/g, 'imes')
-    .replace(/a/g, 'ai')
-    .replace(/o/g, 'ober')
-    .replace(/u/g, 'ufat');
-    p.textContent = text;
+    let textDesencriptado = text.replace(/enter/g, 'e')
+    .replace(/imes/g, 'i')
+    .replace(/ai/g, 'a')
+    .replace(/ober/g, 'o')
+    .replace(/ufat/g, 'u');
+    console.log(textDesencriptado)
+    p.textContent = textDesencriptado;
 }
 
 const paragraph = "I think Ruth's dog is cuter than your dog!";
@@ -71,12 +72,19 @@ function reemplazarLetras(palabra) {
   
   console.log("Palabra original:", palabraOriginal);
   console.log("Palabra modificada:", palabraModificada);
-var palabra = "hola alura";
-  var palabraConvertida = palabra
-    .replace(/e/g, 'enter')
-    .replace(/i/g, 'imes')
-    .replace(/a/g, 'ai')
-    .replace(/o/g, 'ober')
-    .replace(/u/g, 'ufat');
-
-    console.log(palabraConvertida)
+  function convertirLetras(palabra) {
+    var palabraConvertida = palabra
+      .replace(/e/g, 'enter')
+      .replace(/i/g, 'imes')
+      .replace(/a/g, 'ai')
+      .replace(/o/g, 'ober')
+      .replace(/u/g, 'ufat');
+    return palabraConvertida;
+  }
+  
+  // Ejemplo de uso
+  var palabraOriginal = "Hola alura";
+  var palabraConvertida = convertirLetras(palabraOriginal);
+  
+  console.log("Palabra original:", palabraOriginal);
+  console.log("Palabra convertida:", palabraConvertida);
