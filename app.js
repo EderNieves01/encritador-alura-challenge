@@ -17,10 +17,24 @@ function encriptar(){
     let p = document.querySelector('#textEncriptado');
     divNoResultado.style.display = "none";
     divResultado.style.display = "block";
-    p.textContent = textArea.value;
+    let text = textArea.value;
+    var result = "";
+    for (let i = 0; i <= text.length; i++) {
+        if(text.charAt(i) === "a"){
+          result += text.charAt(i).replace("a", 'ai');  
+        }else if(text.charAt(i) === "e"){
+            result += text.charAt(i).replace("e", "enter") 
+        }else if(text.charAt(i) === "i"){
+            result += text.charAt(i).replace("i", "items")
+        }else if(text.charAt(i) === "o"){
+            result += text.charAt(i).replace("o", "ober")
+        }else if(text.charAt(i) === "u"){
+            result += text.charAt(i).replace("u", "ufat")
+        }else{
+            result += text.charAt(i)
+        }
+        
+    }
+
+    p.textContent = result;
 }
-
-
-// divResultado.style.display = "none";
-// divNoResultado.style.display = "block";
-// console.log(divResultado)
