@@ -6,9 +6,14 @@ const btnDesencriptar = document.querySelector('#btnDesencriptar');
 const textArea = document.querySelector('#textArea');
 
 //capturando divs
-const divNoResultado = document.querySelector('.no-resultado');
-const divResultado = document.querySelector('.div-resultado');
 
+
+function ocultarDivs(){
+const divNoResultado = document.querySelector('.no-resultado');
+const divResultado = document.querySelector('.div-resultado');  
+ divNoResultado.style.display = "none";
+ divResultado.style.display = "block";
+}
 
 
 btnEncriptar.addEventListener('click', encriptar);
@@ -16,8 +21,7 @@ btnDesencriptar.addEventListener('click', desencriptar);
 
 function encriptar(){
     let p = document.querySelector('#textEncriptado');
-    divNoResultado.style.display = "none";
-    divResultado.style.display = "block";
+    ocultarDivs();
     let text = textArea.value;
     var result = "";
     for (let i = 0; i <= text.length; i++) {
