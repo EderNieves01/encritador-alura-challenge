@@ -19,9 +19,20 @@ btnEncriptar.addEventListener('click', encriptar);
 btnDesencriptar.addEventListener('click', desencriptar);
 
 function encriptar(){
-    let p = document.querySelector('#textEncriptado');
     ocultarDivs();
     let text = textArea.value;
+    encriptarText(text)
+   
+}
+
+function desencriptar(){
+    ocultarDivs();
+    let text = textArea.value;
+    desencriptarText(text);
+}
+
+function encriptarText(text){
+    let p = document.querySelector('#textEncriptado');
     var result = "";
     for (let i = 0; i <= text.length; i++) {
         if(text.charAt(i) === "a"){
@@ -41,12 +52,6 @@ function encriptar(){
     p.textContent = result;
 }
 
-function desencriptar(){
-    ocultarDivs();
-    let text = textArea.value;
-    desencriptarText(text);
-}
-
 function desencriptarText(text){
     let p = document.querySelector('#textEncriptado');
     let textDesencriptado = text.replace(/enter/g, 'e')
@@ -57,13 +62,3 @@ function desencriptarText(text){
     console.log(textDesencriptado)
     p.textContent = textDesencriptado;
 }
-
-  function convertirLetras(palabra) {
-    var palabraConvertida = palabra
-      .replace(/e/g, 'enter')
-      .replace(/i/g, 'imes')
-      .replace(/a/g, 'ai')
-      .replace(/o/g, 'ober')
-      .replace(/u/g, 'ufat');
-    return palabraConvertida;
-  }
