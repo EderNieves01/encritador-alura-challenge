@@ -51,14 +51,6 @@ function desencriptar(){
     p.textContent = textDesencriptado;
 }
 
-const paragraph = "I think Ruth's dog is cuter than your dog!";
-
-console.log(paragraph.replace("Ruth's", 'my' && "dog", 'cat'));
-// Expected output: "I think my dog is cuter than your dog!"
-
-const regex = /Dog/i;
-console.log(paragraph.replace(regex, 'ferret'));
-// Expected output: "I think Ruth's ferret is cuter than your dog!"
 
 function reemplazarLetras(palabra) {
     // Reemplazar 'o' con 'ober' y 'a' con 'ai'
@@ -66,12 +58,7 @@ function reemplazarLetras(palabra) {
     return nuevaPalabra;
   }
   
-  // Ejemplo de uso
-  var palabraOriginal = "Hola";
-  var palabraModificada = reemplazarLetras(palabraOriginal);
-  
-  console.log("Palabra original:", palabraOriginal);
-  console.log("Palabra modificada:", palabraModificada);
+
   function convertirLetras(palabra) {
     var palabraConvertida = palabra
       .replace(/e/g, 'enter')
@@ -81,10 +68,3 @@ function reemplazarLetras(palabra) {
       .replace(/u/g, 'ufat');
     return palabraConvertida;
   }
-  
-  // Ejemplo de uso
-  var palabraOriginal = "Hola alura";
-  var palabraConvertida = convertirLetras(palabraOriginal);
-  
-  console.log("Palabra original:", palabraOriginal);
-  console.log("Palabra convertida:", palabraConvertida);
