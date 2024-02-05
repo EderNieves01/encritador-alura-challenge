@@ -5,32 +5,37 @@ const btnDesencriptar = document.querySelector('#btnDesencriptar');
 //capturando text area
 const textArea = document.querySelector('#textArea');
 
-//capturando divs
-
-
+//Esta function permite ocultar y mostrar el display de los divs
 function ocultarDivs(){
+
 const divNoResultado = document.querySelector('.no-resultado');
 const divResultado = document.querySelector('.div-resultado');  
+
  divNoResultado.style.display = "none";
  divResultado.style.display = "block";
 }
 
+//Eventos y sus botones
 btnEncriptar.addEventListener('click', encriptar);
 btnDesencriptar.addEventListener('click', desencriptar);
 
+//Esta function se activa al pulsar el boton btnEncriptar
 function encriptar(){
+
     ocultarDivs();
     let text = textArea.value;
     encriptarText(text)
    
 }
 
+//Esta function se activa al pulsar el boton btnDesencriptar
 function desencriptar(){
     ocultarDivs();
     let text = textArea.value;
     desencriptarText(text);
 }
 
+//Con esta function permite encriptar el texto con un bucle for y los metodos .charAt() y .replace()
 function encriptarText(text){
     let p = document.querySelector('#textEncriptado');
     var result = "";
@@ -52,6 +57,7 @@ function encriptarText(text){
     p.textContent = result;
 }
 
+//Con esta function permite encriptar el texto con .replace() mas complejo sin usar el bucle for convinado con .chatAt()
 function desencriptarText(text){
     let p = document.querySelector('#textEncriptado');
     let textDesencriptado = text.replace(/enter/g, 'e')
