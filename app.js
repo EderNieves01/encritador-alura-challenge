@@ -15,7 +15,6 @@ const divResultado = document.querySelector('.div-resultado');
  divResultado.style.display = "block";
 }
 
-
 btnEncriptar.addEventListener('click', encriptar);
 btnDesencriptar.addEventListener('click', desencriptar);
 
@@ -43,8 +42,7 @@ function encriptar(){
 }
 function desencriptar(){
     let p = document.querySelector('#textEncriptado');
-    divNoResultado.style.display = "none";
-    divResultado.style.display = "block";
+    ocultarDivs();
     let text = textArea.value;
     let textDesencriptado = text.replace(/enter/g, 'e')
     .replace(/imes/g, 'i')
