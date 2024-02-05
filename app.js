@@ -40,10 +40,15 @@ function encriptar(){
     }
     p.textContent = result;
 }
+
 function desencriptar(){
-    let p = document.querySelector('#textEncriptado');
     ocultarDivs();
     let text = textArea.value;
+    desencriptarText(text);
+}
+
+function desencriptarText(text){
+    let p = document.querySelector('#textEncriptado');
     let textDesencriptado = text.replace(/enter/g, 'e')
     .replace(/imes/g, 'i')
     .replace(/ai/g, 'a')
@@ -52,14 +57,6 @@ function desencriptar(){
     console.log(textDesencriptado)
     p.textContent = textDesencriptado;
 }
-
-
-function reemplazarLetras(palabra) {
-    // Reemplazar 'o' con 'ober' y 'a' con 'ai'
-    var nuevaPalabra = palabra.replace(/o/g, 'ober').replace(/a/g, 'ai');
-    return nuevaPalabra;
-  }
-  
 
   function convertirLetras(palabra) {
     var palabraConvertida = palabra
