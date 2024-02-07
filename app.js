@@ -18,9 +18,7 @@ const divResultado = document.querySelector('.div-resultado');
 //Eventos y sus botones
 btnEncriptar.addEventListener('click', encriptar);
 btnDesencriptar.addEventListener('click', desencriptar);
-btnCopiar.addEventListener("click", function(){
-    console.log("copiando")
-})
+btnCopiar.addEventListener("click", copiarText)
 
 //Esta function se activa al pulsar el boton btnEncriptar
 function encriptar(){
@@ -70,4 +68,16 @@ function desencriptarText(text){
     .replace(/ufat/g, 'u');
     console.log(textDesencriptado)
     p.textContent = textDesencriptado;
+}
+
+//con el metodo  navigator.clipboard.writeText(p) podemos copiar algun texto
+//validando permiso desde su api asi utilizamos la captura de errores con promesas try catch
+function copiarText(){
+    let p = document.querySelector('#textEncriptado').innerHTML;
+ try{
+  await  navigator.clipboard.writeText(p);
+  console.log('Contenido copiado al portapapeles', p);
+ } catch(error){
+       console.error('Error al copiar', error);
+ }
 }
