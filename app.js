@@ -26,8 +26,8 @@ function validarText(text){
     //agregando expresiones regulares
     let minusculas = /[~!@#$%^&*()_+|}{[\]\\\/?><:"`;.,áéíóúàèìòù']/g;
     let mayusculas = /[A-Z]/g;  
-    
-    if(texto.match(mayusculas)||texto.match(caracteres)){
+
+    if(texto.match(mayusculas)||texto.match(minusculas)){
         alert("No se permiten caracteres especiales ni mayusculas");
         return true; 
     }else if(texto== ""){
@@ -44,6 +44,7 @@ function encriptar(){
 
     ocultarDivs();
     let text = textArea.value;
+    validarText(text)
     encriptarText(text)
    
 }
@@ -91,7 +92,7 @@ function desencriptarText(text){
 
 //con el metodo  navigator.clipboard.writeText(p) podemos copiar algun texto
 //validando permiso desde su api asi utilizamos la captura de errores con promesas try catch
-function copiarText(){
+async function copiarText(){
     let p = document.querySelector('#textEncriptado').innerHTML;
  try{
   await  navigator.clipboard.writeText(p);
