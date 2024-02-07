@@ -27,10 +27,10 @@ function validarText(text){
     let minusculas = /[~!@#$%^&*()_+|}{[\]\\\/?><:"`;.,áéíóúàèìòù']/g;
     let mayusculas = /[A-Z]/g;  
 
-    if(texto.match(mayusculas)||texto.match(minusculas)){
+    if(text.match(mayusculas)||text.match(minusculas)){
         alert("No se permiten caracteres especiales ni mayusculas");
         return true; 
-    }else if(texto== ""){
+    }else if(text== ""){
        alert("Ingrese un mensaje para encriptar");
         return true;
    }else {
