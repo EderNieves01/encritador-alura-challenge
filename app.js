@@ -20,6 +20,15 @@ btnEncriptar.addEventListener('click', encriptar);
 btnDesencriptar.addEventListener('click', desencriptar);
 btnCopiar.addEventListener("click", copiarText)
 
+//validando texto que solo permita letras minusculas y sin caracteres especiales
+
+function validarText(text){
+    //agregando expresiones regulares
+    let minusculas = /[~!@#$%^&*()_+|}{[\]\\\/?><:"`;.,áéíóúàèìòù']/g;
+    let mayusculas = /[A-Z]/g;  
+}
+
+
 //Esta function se activa al pulsar el boton btnEncriptar
 function encriptar(){
 
