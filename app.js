@@ -1,7 +1,7 @@
 //capturando botones
 const btnEncriptar = document.querySelector('#btnEncriptar');
 const btnDesencriptar = document.querySelector('#btnDesencriptar');
-
+const btnCopiar = document.querySelector('#btncopiar');
 //capturando text area
 const textArea = document.querySelector('#textArea');
 
@@ -18,6 +18,9 @@ const divResultado = document.querySelector('.div-resultado');
 //Eventos y sus botones
 btnEncriptar.addEventListener('click', encriptar);
 btnDesencriptar.addEventListener('click', desencriptar);
+btnCopiar.addEventListener("click", function(){
+    console.log("copiando")
+})
 
 //Esta function se activa al pulsar el boton btnEncriptar
 function encriptar(){
