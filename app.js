@@ -26,6 +26,16 @@ function validarText(text){
     //agregando expresiones regulares
     let minusculas = /[~!@#$%^&*()_+|}{[\]\\\/?><:"`;.,áéíóúàèìòù']/g;
     let mayusculas = /[A-Z]/g;  
+    
+    if(texto.match(mayusculas)||texto.match(caracteres)){
+        alert("No se permiten caracteres especiales ni mayusculas");
+        return true; 
+    }else if(texto== ""){
+       alert("Ingrese un mensaje para encriptar");
+        return true;
+   }else {
+        return false;
+    }
 }
 
 
