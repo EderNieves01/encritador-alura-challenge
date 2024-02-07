@@ -76,7 +76,7 @@ function copiarText(){
     let p = document.querySelector('#textEncriptado').innerHTML;
  try{
   await  navigator.clipboard.writeText(p);
-  console.log('Contenido copiado al portapapeles', p);
+  alert('Contenido copiado al portapapeles', p);
  } catch(error){
        console.error('Error al copiar', error);
  }
