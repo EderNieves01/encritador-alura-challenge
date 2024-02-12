@@ -193,4 +193,13 @@ footer{
         margin: 1rem 1.5rem;
         width: 80%;
     }
+    #imgAdvertencia{
+        margin: 1rem;
+        padding-left: 1rem;
+    }
+    #text-advertencia{
+        font-size: 12px;
+        padding-top: 1rem;
+        padding-left: .3rem;
+    }
 }
