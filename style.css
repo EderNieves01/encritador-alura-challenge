@@ -202,4 +202,23 @@ footer{
         padding-top: 1rem;
         padding-left: .3rem;
     }
+    .btns{
+        flex-wrap: wrap;
+        gap: 1.50rem;
+        padding-left: -6rem;
+        margin-top: 1.5rem;
+    }
+    #btnEncriptar, #btnDesencriptar{
+        font-size: 18px;
+        padding-top: .9rem;
+        padding-bottom: .9rem;
+    }
+    #btnEncriptar{
+        padding-left: 7.2rem;
+        padding-right: 7.2rem;
+    }
+    #btnDesencriptar{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
 }
