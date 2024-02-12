@@ -226,5 +226,42 @@ footer{
         display: none;
     }
 
-    
+    .sectionRigth{
+        margin: 2rem 2rem;
+        width: 100%;
+    }
+
+    .contenedor-h3{
+        height: 9rem;
+        padding-top: 2rem;
+    }
+    .ajustes-h3{
+        font-size: 30px;
+        line-height: 2rem;
+    }
+
+    .contenedor-parrafo{
+        margin-top: -1rem;
+        margin-bottom: -3rem;
+    }
+
+    .ajustes-parrafo{
+        font-size: 28px;
+        line-height: 2rem;
+    }
+
+    #textEncriptado{
+        display: none;
+    }
+
+    #pie-de-pagina{
+        padding: .8rem;
+        margin-top: 35rem;
+        height: auto;
+    }
+    .img-redes{
+        width: 32px;
+        height: 32px;
+    }
+
 }
