@@ -3,6 +3,7 @@
 .headerAlura {
     display: flex;
     margin: 20px 0 15px 10px;
+
 }
 /* estilos del main */
 main{
@@ -183,6 +184,13 @@ footer{
 
 @media screen and (max-width: 480px){
     main{
-        background-color: yellow;
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .textArea{
+        height: 32rem;
+        margin: 1rem 1.5rem;
+        width: 80%;
     }
 }
