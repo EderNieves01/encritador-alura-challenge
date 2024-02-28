@@ -184,13 +184,13 @@ footer{
 
 @media screen and (max-width: 480px){
     main{
-        width: auto;
         flex-wrap: wrap;
         justify-content: center;
+        margin: 0%;
     }
     .textArea{
         height: 32rem;
-        margin: 1rem 1.5rem;
+        margin: 0.5rem 0.5rem;
         width: 80%;
     }
     #imgAdvertencia{
@@ -198,15 +198,15 @@ footer{
         padding-left: 1rem;
     }
     #text-advertencia{
-        font-size: 12px;
+        font-size: 1rem;
         padding-top: 1rem;
         padding-left: .3rem;
     }
     .btns{
         flex-wrap: wrap;
         gap: 1.50rem;
-        padding-left: -6rem;
-        margin-top: 1.5rem;
+        padding: 1rem;
+        margin-top: 0;
     }
     #btnEncriptar, #btnDesencriptar{
         font-size: 18px;
@@ -227,36 +227,56 @@ footer{
     }
 
     .sectionRigth{
-        margin: 2rem 2rem;
+        margin: 1rem 2rem;
         width: 100%;
+    }
+    .sectionLeft{
+        margin-top: 0%;
+      margin-bottom: 0%;
     }
 
     .contenedor-h3{
-        height: 9rem;
+        margin-top: 0.5rem;
+        height: 5rem;
         padding-top: 2rem;
     }
     .ajustes-h3{
-        font-size: 30px;
+        font-size: 24px;
         line-height: 2rem;
     }
 
     .contenedor-parrafo{
-        margin-top: -1rem;
-        margin-bottom: -3rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 
     .ajustes-parrafo{
-        font-size: 28px;
+        font-size: 1rem;
         line-height: 2rem;
     }
-
-    #textEncriptado{
-        display: none;
-    }
-
+ .no-resultado{
+    height: auto;
+ }
+ .div-text-encriptado{
+    height: 5rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+.div-copiar{
+    height: auto;
+    margin-bottom: 1rem;
+}
+.text-encriptado{
+    height: 5rem;
+    margin-top: 1rem;
+    font-size: 22px;
+    line-height: 1.6rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
     #pie-de-pagina{
         padding: .8rem;
-        margin-top: 35rem;
+        margin-top: 25rem;
         height: auto;
     }
     .img-redes{
