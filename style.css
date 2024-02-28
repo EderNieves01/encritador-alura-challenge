@@ -45,6 +45,7 @@ main{
     margin-right: 0.5rem;
 }
 #text-advertencia {
+    padding-top: 3px;
     font-size: 12px;
 }
 
