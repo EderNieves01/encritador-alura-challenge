@@ -4,16 +4,16 @@ body{
 /* estilos del header */
 .headerAlura {
     display: flex;
-    margin: 15px 0 15px 0;
+    margin: 50px 0 15px 0;
 
 }
 
 /* estilos del main */
 main{
     display: flex;
-    height: 33rem;
+    height: auto;
     margin-bottom: 1rem;
-    width: 90%;
+    width: 100%;
 
 }
 
@@ -23,28 +23,25 @@ main{
     justify-content: flex-start;
     flex-wrap: wrap;
     padding-top: 2rem;
-    margin: 3rem;
+    margin-left: 150px;
 }
 .text-area1 {
     outline: none;
     border: none;
-    display: flex;
     font-size: 20px;
     line-height: 2rem;
-    padding: .8rem;
     resize: none;
     width: 74%;
     border-style: none;
-    margin-left: 30px;
     background-color:  rgb(240, 240, 240);;
 }
 .advertencia {
     display: flex;
     margin-top: 10px;
+    margin-bottom: 0%;
 }
 
 #imgAdvertencia {
-    float: left;
     width: 17px;
     height: 17px;
     margin-right: 0.5rem;
@@ -52,6 +49,7 @@ main{
 #text-advertencia {
     padding-top: 3px;
     font-size: 12px;
+    
 }
 
 /* botones lado izquierdo */
