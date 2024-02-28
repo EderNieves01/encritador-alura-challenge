@@ -1,11 +1,11 @@
 body{
-    background-color: rgb(240, 240, 240);
+    background-color: #F3F5FC;
 }
 /* estilos del header */
 .headerAlura {
     display: flex;
     margin: 50px 0 25px 25px;
-     
+     width: 200px;
 }
 
 /* estilos del main */
@@ -13,7 +13,6 @@ main{
     display: flex;
     height: auto;
     margin-bottom: 1rem;
-    width: 100%;
 }
 
 /* estilos del sectionLeft */
@@ -21,7 +20,7 @@ main{
     justify-content: flex-start;
     flex-wrap: wrap;
     padding-top: 2rem;
-    margin-left: 150px;
+    margin-left: 145px;
     margin-bottom: 3rem;
 }
 .text-area1 {
@@ -32,7 +31,7 @@ main{
     resize: none;
     width: 74%;
     border-style: none;
-    background-color:  rgb(240, 240, 240);;
+    background-color:  #F3F5FC;
 }
 .advertencia {
     display: flex;
@@ -61,7 +60,7 @@ main{
 #btnEncriptar {
     margin-right: 10px;
     color: white;
-    padding: 15px 150px 15px 90px;
+    padding: 15px 175px 15px 115px;
     border-radius: 15px;
     background: var(--Dark-blue-dark-blue-300, #0A3871);
     cursor: pointer; 
@@ -71,7 +70,7 @@ main{
 }
 
 #btnDesencriptar {
-    padding: 15px 150px 15px 90px;
+    padding: 15px 175px 15px 115px;
     border-radius: 15px;
     background: #D8DFE8;
     cursor: pointer;
@@ -80,14 +79,13 @@ main{
 }
 /* estilos del sectionRigth*/
 .sectionRigth{
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin-right: 2rem;
-    
-    overflow: hidden;
-    width: 44%;
-    box-shadow: 0px 0px 5px rgba(109, 117, 124, 0.8); 
-    cursor: zoom-in;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    border-radius: 32px;
+    background-color: #FFFFFF;
+    height: 35rem;
+    width: 400px;
 }
 .no-resultado{
 display: block;
