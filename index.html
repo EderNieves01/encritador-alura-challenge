@@ -18,33 +18,33 @@
 <main>
 
     <section class="sectionLeft">
-        <textarea class="text-area1" name="textArea" id="textArea" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus></textarea>
+        <div class="div-area">
+
+      
+        <textarea class="text-area1 area" name="textArea" id="textArea" cols="30" rows="13" placeholder="Ingrese el texto aqui" autofocus></textarea>
      <div class="advertencia">
            <img id="imgAdvertencia" src="img/advertencia.png" alt="advertencia">
-       
+         </div>
     <aside id="text-advertencia">solo letras minusculas y sin acentos</aside>
          
      </div>
      <div class="btns">
          
-       <button  id="btnEncriptar">Encriptar</button>
-    <button id="btnDesencriptar">Desencriptar</button>
+       <input type="button"  id="btnEncriptar" value="Encriptar"></input>
+    <input type="button" id="btnDesencriptar" value="Desencriptar"></input>
   
      </div>
      
     </section>
-    
-    
-
     <section class="sectionRigth">
 
         <div class="no-resultado">
 
         <div class="img-detective">
-            <img id="ocultar-muneco" src="img/detective.png" width="140" height="140" alt="Imagen detective sorprendido">
+            <img id="ocultar-muneco" src="img/detective.png" width="140" height="220" alt="Imagen detective sorprendido">
         </div>
         <div class="contenedor-h3">
-            <h3 class="ajustes-h3">Ningún mensaje fue encontrado</h3>
+            <h3 class="ajustes-h3">Ningún mensaje fue <br> encontrado</h3>
         </div>
 
         <div class="contenedor-parrafo">
@@ -52,7 +52,6 @@
         </div>
 
 </div>
-
         <div class="div-resultado">
             <div class="div-text-encriptado">
                <p class="text-encriptado" id="textEncriptado">hholaala</p>
