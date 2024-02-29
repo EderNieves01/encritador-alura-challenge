@@ -207,48 +207,64 @@ footer{
     }
 
     /* Ocultamos la imagen y el titulo encriptado */
-    #ocultar-muneco{
+    /* #ocultar-muneco{
         display: none;
     }
     #ocultar-titulo-encriptado{
         display: none;
-    }
-}
+    } */
 
-@media screen and (max-width: 480px){
+
+
+@media screen and (max-width: 375px){
+
     main{
-        flex-wrap: wrap;
-        justify-content: center;
+        display: block;
         margin: 0%;
+        width: 100%;
+        
     }
-    .textArea{
-        height: 32rem;
-        margin: 0.5rem 0.5rem;
-        width: 80%;
+    .headerAlura{
+        width: 100%;
     }
+    #imgLogo{
+        justify-content: start;
+        margin-left: 0%;
+    }
+    .advertencia{
+        display: flex;
+    }
+    .div-area{
+        margin-left: 1.5rem;
+    }
+
+    .text-area1{
+        width: 100%;
+        height: 16rem;
+    }
+   
     #imgAdvertencia{
         margin: 1rem;
-        padding-left: 1rem;
+    
     }
     #text-advertencia{
         font-size: 1rem;
         padding-top: 1rem;
-        padding-left: .3rem;
     }
+
     .btns{
-        flex-wrap: wrap;
-        gap: 1.50rem;
-        padding: 1rem;
-        margin-top: 0;
+        display: block;
     }
     #btnEncriptar, #btnDesencriptar{
         font-size: 18px;
         padding-top: .9rem;
         padding-bottom: .9rem;
+        width: 100%;
     }
     #btnEncriptar{
         padding-left: 7.2rem;
         padding-right: 7.2rem;
+        margin-bottom: 1rem;
     }
     #btnDesencriptar{
         padding-left: 6rem;
@@ -260,18 +276,20 @@ footer{
     }
 
     .sectionRigth{
-        margin: 1rem 2rem;
-        width: 100%;
+        margin: -2.5rem 1rem 1.5rem 1rem;
+        width: 90%;
+        height: auto;
     }
     .sectionLeft{
-        margin-top: 0%;
-      margin-bottom: 0%;
+        margin-top: 5rem;
+        padding: 0%;
+        margin-bottom: 6rem
     }
-
+    
     .contenedor-h3{
-        margin-top: 0.5rem;
-        height: 5rem;
-        padding-top: 2rem;
+        text-align: center;
+        padding-top: 0.5rem;
+        width: auto;
     }
     .ajustes-h3{
         font-size: 24px;
@@ -280,7 +298,7 @@ footer{
 
     .contenedor-parrafo{
         margin-top: 1rem;
-        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
     }
 
     .ajustes-parrafo{
@@ -290,31 +308,18 @@ footer{
  .no-resultado{
     height: auto;
  }
- .div-text-encriptado{
-    height: 5rem;
-    padding-bottom: 1rem;
-    display: block;
+ .div-resultado{
+     text-align: center;
+     padding-top: 1rem;
+     height: auto;
+ }
+ .text-encriptado{
+     padding: 2rem;
+ }
+ .div-copiar{
+     padding-bottom: 1rem;
+ }
+.pie-de-pagina{
+    width: 100%;
 }
-.div-copiar{
-    height: auto;
-    margin-bottom: 1rem;
 }
-.text-encriptado{
-    height: 5rem;
-    margin-top: 1rem;
-    font-size: 22px;
-    line-height: 1.6rem;
-    padding-bottom: 1rem;
-    text-align: center;
-}
-    #pie-de-pagina{
-        padding: .8rem;
-        margin-top: 25rem;
-        height: auto;
-    }
-    .img-redes{
-        width: 32px;
-        height: 32px;
-    }
-
-} */
